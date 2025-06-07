@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>確認画面</title>
+</head>
+<body>
+    <h1>入力内容をご確認ください。</h1>
+
+    <p>お名前：<span th:text="${contactForm.name}"></span></p>
+    <p>メールアドレス：<span th:text="${contactForm.email}"></span></p>
+    <p>お問い合わせ内容：</p>
+    <pre th:text="${contactForm.message}"></pre>
+
+    <form action="/form" method="get">
+		
+    </form>
+</body>
+</html>
